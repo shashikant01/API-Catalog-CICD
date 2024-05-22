@@ -14,7 +14,7 @@ paths:
               example: 
                 [
                   {
-                    "id": "112342",
+                    "id": "112342!!",
                     "title": "The Black T-Shirt",
                     "price": "100 USD",
                     "availability": "inStock"
