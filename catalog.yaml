@@ -1,0 +1,16 @@
+#%Catalog Descriptor 1.0
+projects:
+  - main: productOasApi\productoasapi.yaml
+    assetId: productoasapi
+    version: 1.0.3
+    apiVersion: v1
+    tags:
+      - author
+      - BG Owners
+      - sys-api
+    contact:
+      name: 'Shashikant'
+      email: 'shashikant.patel01@gmail.com' 
+      
+    documentation:
+      Home: home.md

@@ -1,0 +1,13 @@
+{
+  "main": "productoasapi.yaml",
+  "name": "productOasApi",
+  "groupId": "d0d20e77-90fe-42e1-a34f-653cf9cc9bc0",
+  "assetId": "productoasapi",
+  "version": "1.0.0",
+  "classifier": "oas",
+  "tags": [],
+  "descriptorVersion": "1.0.0",
+  "organizationId": "d0d20e77-90fe-42e1-a34f-653cf9cc9bc0",
+  "apiVersion": "v1",
+  "originalFormatVersion": "3.0"
+}

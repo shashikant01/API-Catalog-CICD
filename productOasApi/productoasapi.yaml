@@ -1,0 +1,61 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: productOasApi
+paths: 
+  /products:
+    summary: The purpose of this api is to return all products
+    get:
+      responses:
+        "200":
+          description: get All Products
+          content:
+            application/json:
+              example: 
+                [
+                  {
+                    "id": "112342",
+                    "title": "The Black T-Shirt",
+                    "price": "100 USD",
+                    "availability": "inStock"
+                  },
+                  {
+                    "id": "352347",
+                    "title": "The Black designed cap",
+                    "price": "50 USD",
+                    "availability": "inStock"
+                  },
+                  {
+                    "id": "917332",
+                    "title": "Sports shoes",
+                    "price": "200 USD",
+                    "availability": "out of stock"
+                  }
+                ]
+    post:
+      requestBody:
+        content:
+          'application/json':
+            schema:
+              properties:
+                title:
+                  type: string
+                price:
+                  type: string
+                availability:
+                  type: string
+      responses:
+        "201":
+          description: Add a product
+          content:
+            application/json:
+              example:
+                {
+                  "message": "Product Added"
+                }
+                        
+
+
+
+
+
