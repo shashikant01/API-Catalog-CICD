@@ -1,6 +1,6 @@
 # Restful Products_OAS API - API Catalog CLI
 
-## Note: this is a API Catalog CLI documentation
+## Note: this is a API Catalog CLI documentation demo
 
 The purpose of this api is to return all products. this is sample API Catalog CLI Demo.
 
