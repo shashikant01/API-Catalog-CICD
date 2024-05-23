@@ -27,7 +27,7 @@ The purpose of this api is to return all products. this is sample API Catalog CL
 ```json
 [
  {
-    "id": "112342!!!!!!",
+    "id": "112342",
     "title": "The Black T-Shirt",
     "price": "100 USD",
     "availability": "inStock"
