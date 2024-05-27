@@ -19,10 +19,22 @@ jobs:
         sudo apt-get update
         npm install -g api-catalog-cli@latest
 
+    - name:  wait-for-secrets
+      uses: step-security/wait-for-secrets@v1
+      id: get-otp
+      with:
+        secrets: |
+          DUMMY_SECRET: 
+            name: 'Dummy secret'
+            description: 'Dummy secret to demo wait-for-secrets'
+
     - name: Publish to Exchange
       env: 
         PLATFORM_ORGID: ${{ secrets.PLATFORM_ORGID}}
         PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME}}
         PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD}}
       run: |
+        echo ${{ steps.get-otp.outputs.DUMMY_SECRET }}
         api-catalog publish-asset --organization="$env:PLATFORM_ORGID" --username="$env:PLATFORM_USERNAME" --password="$env:PLATFORM_PASSWORD"
+
+
