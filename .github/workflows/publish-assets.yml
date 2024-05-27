@@ -25,7 +25,6 @@ jobs:
         PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME}}
         PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD}}
       run: |
-        echo ${{ steps.get-otp.outputs.DUMMY_SECRET }}
         api-catalog publish-asset --organization="$env:PLATFORM_ORGID" --username="$env:PLATFORM_USERNAME" --password="$env:PLATFORM_PASSWORD"
 
 
