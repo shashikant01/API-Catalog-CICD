@@ -1,6 +1,6 @@
 #%Catalog Descriptor 1.0
 projects:
-  - main: productOasApi\productoasapi.yaml
+  - main: productOasApi/productoasapi.yaml
     assetId: productoasapi
     version: 1.0.3
     apiVersion: v1
