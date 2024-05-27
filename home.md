@@ -2,7 +2,7 @@
 
 ## Note: this is a API Catalog CLI documentation demo
 
-The purpose of this api is to return all products. this is sample API Catalog CLI Demo.
+The purpose of this api is to return all products. this is sample API Catalog CLI.
 
 **URL** : `/api/products`
 
