@@ -25,6 +25,6 @@ jobs:
         PLATFORM_USERNAME: ${{ secrets.PLATFORM_USERNAME}}
         PLATFORM_PASSWORD: ${{ secrets.PLATFORM_PASSWORD}}
       run: |
-        api-catalog publish-asset --organization="$env:PLATFORM_ORGID" --username="$env:PLATFORM_USERNAME" --password="$env:PLATFORM_PASSWORD"
+        api-catalog publish-asset --host="anypoint.mulesoft.com" --organization="$env:PLATFORM_ORGID" --username="$env:PLATFORM_USERNAME" --password="$env:PLATFORM_PASSWORD"
 
 
